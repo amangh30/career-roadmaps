@@ -104,12 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Card interactivity: Add animations or custom alerts on click
     const cards = document.querySelectorAll('.card a');
-    cards.forEach((link) => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Feature coming soon! Stay tuned.');
-        });
-    });
+cards.forEach((link) => {
+    // Remove the event listener entirely to allow default behavior
+});
 });
 
 document.addEventListener('DOMContentLoaded', () => {
