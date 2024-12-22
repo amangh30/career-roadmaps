@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (body.classList.contains('day-mode')) {
             body.classList.remove('day-mode');
             body.classList.add('night-mode');
-            toggleButton.textContent = '🌙 Night Mode';
+            toggleButton.textContent = '☀️ Day Mode';
         } else {
             body.classList.remove('night-mode');
             body.classList.add('day-mode');
-            toggleButton.textContent = '🌞 Day Mode';
+            toggleButton.textContent = '🌙 Night Mode';
         }
     });
 });
