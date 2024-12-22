@@ -54,10 +54,6 @@ function generateRoadmapCards() {
         const title = document.createElement("h2");
         title.textContent = roadmap.title;
 
-        // Description
-        const description = document.createElement("p");
-        description.textContent = roadmap.description;
-
         // Link
         const link = document.createElement("a");
         link.href = roadmap.link;
@@ -66,7 +62,6 @@ function generateRoadmapCards() {
 
         // Append elements to the card
         card.appendChild(title);
-        card.appendChild(description);
         card.appendChild(link);
 
         // Append the card to the container
@@ -101,30 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial theme setup
     body.classList.add('day-mode');
-
-    // Card interactivity: Add animations or custom alerts on click
-    const cards = document.querySelectorAll('.card a');
-cards.forEach((link) => {
-    // Remove the event listener entirely to allow default behavior
-});
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('toggle-theme');
-    const body = document.body;
-
-    // Initially set to Day Mode
-    body.classList.add('day-mode');
-
-    toggleButton.addEventListener('click', () => {
-        if (body.classList.contains('day-mode')) {
-            body.classList.remove('day-mode');
-            body.classList.add('night-mode');
-            toggleButton.textContent = '☀️';
-        } else {
-            body.classList.remove('night-mode');
-            body.classList.add('day-mode');
-            toggleButton.textContent = '🌙';
-        }
-    });
 });
