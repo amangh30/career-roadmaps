@@ -18,6 +18,26 @@ const roadmaps = [
     {
         title: "Blockchain Developer",
         link: "https://roadmap.sh/blockchain"
+    },
+    {
+        title: "Engineering Manager",
+        link: "https://roadmap.sh/engineering-manager"
+    },
+    {
+        title: "Product Manager",
+        link: "https://roadmap.sh/product-manager"
+    },
+    {
+        title: "Android Developer",
+        link: "https://roadmap.sh/android"
+    },
+    {
+        title: "MLOps",
+        link: "https://roadmap.sh/mlops"
+    },
+    {
+        title: "Software Architect",
+        link: "https://roadmap.sh/software-architect"
     }
 ];
 
@@ -111,4 +131,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
