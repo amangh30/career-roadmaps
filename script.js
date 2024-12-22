@@ -64,6 +64,11 @@ function generateRoadmapCards() {
         card.appendChild(title);
         card.appendChild(link);
 
+        // Add event listener to redirect on card click
+        card.addEventListener('click', () => {
+            window.open(roadmap.link, '_blank');
+        });
+
         // Append the card to the container
         container.appendChild(card);
     });
